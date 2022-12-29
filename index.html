@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+  <!-- <section class="image-part">
+    <div class="pics">
+      <img src="/interactive-card-details-form-main/images/bg-main-mobile.png" alt="" class="main-mobile">
+      <div class="back-card-container">
+        <img src="./images/bg-card-back.png" alt="" class="back-card">
+        <span class="back-card-text">000</span>
+      </div>
+      <div class="front-card-box">
+        <img src="./images/bg-card-front.png" alt="" class="card-front">
+        <div class="front-card-deatails">
+          <div class="circles">
+            <span class="big-white-circle">
+            </span>
+            <span class="small-circle">
+            </span>
+          </div>
+          <div class="card-deatails-number-container">
+            <span class="card-deatails-number">0000 0000 000</span>
+          </div>
+          <div class="front-card-name-container">
+            <span class="front-card-name">Franklin Bush</span>
+            <span class="front-card-number">00/00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <img src="./images/bg-main-desktop.png" alt="" class="bg-img">
+  <img src="./images/bg-main-mobile.png" alt="" class="bg-img-x3">
+
+  <div class="container">
+      <section class="card-display">
+        <div class="card-front">
+          <img src="./images/bg-card-front.png" alt="" class="card-front-img">
+          <img src="./images/card-logo.svg" alt="" class="card-logo">
+          <div class="card-number-display">76980</div>
+          <div class="cardholder-display"></div>
+          <div class="expiry-month-display"></div>
+          <div class="expiry-divider-display"></div>
+          <div class="expiry-year-display">0000</div>
+        </div>
+        <div class="card-back">
+          <img src="./images/bg-card-back.png" alt="" class="card-back-img">
+          <p class="cvc-display">000</p>
+        </div>
+      </section>
+      <section class="card-details card-form">
+        <form action="/action-page.php" id="myform" name="myform">
+          <label for="cardholder-name">CARD HOLDER NAME</label>
+          <input type="text" id="cardholder-name" class="cardholder-name" placeholder="e.g. Franklin kithaka" oninput="inputName()">
+          <p id="errorMsg" class="error"></p>
+          <label for="card-number" class="cardnumber">CARD NUMBER</label>
+          <input type="number" id="card-number" class="card-number" placeholder="e.g. 1234 4567 8901" oninput="inputCardNum()">
+          <p id="card-num-error" class="error"></p>
+          <div class="flex">
+            <label for="expiry-date" class="expiry-date">Exp. Date (MM/YY) <br/> </label> 
+              <div class="date-container">
+                <input
+                class="expiry"
+                type="text"
+                name="expiry-date"
+                placeholder="MM"
+                oninput="inputMM()">
+                <input
+                class="expiry"
+                type="text"
+                name="expiry-date"
+                placeholder="YYY"
+                oninput="inputYY()">
+                <P id="expiry-error" class="error"></P>
+              </div>
+            <label for="" class="CVC">CVC <br />
+            <input
+            type="text"
+            class="cvc"
+            id="cvc"
+            name="cvc"
+            placeholder="123"
+            oninput="inputCVC()"
+            >
+            <p id="cvc-error" class="error"></p>
+          </label>
+          </div>
+        </form>
+        <button type="submit" value="Confirm" class="submit-btn">Confirm</button>
+      </section>
+  </div>
+  <section class="complete-state thank-you hidden">
+    <article>
+      <img src="./images/icon-complete.svg" alt="" class="complete-icon">
+      <p class="thanks">THANK YOU!</p>
+      <p>We have added your card details</p>
+      <button type="submit" value="Continue" class="submit-btn" id="continue-btn">continue</button>
+    </article>
+  </section>
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Franklin Bush</a>.
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
