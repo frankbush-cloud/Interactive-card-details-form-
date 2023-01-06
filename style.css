@@ -11,7 +11,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     height: 100vh;
     position: relative;
     display: flex;
@@ -56,7 +56,7 @@ article p{
 /* main{
     margin-top: 5rem;
 } */
-.bg-img{
+/* .bg-img{
     display: absolute;
     width: 700px;
     height: 100%;
@@ -246,7 +246,7 @@ button:hover{
 
 .date-container{
    display: flex;
-}
+} */
 
 /* @media screen and (max-width: 1024px){
     .card-front{left: 75px;}
@@ -292,4 +292,4 @@ button:hover{
         right: 45px;
     }
 
-} */
+} */ */
